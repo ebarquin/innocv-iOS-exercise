@@ -9,10 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var users: Users = []
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let getAllUsersFromAPI = GetAllUsersFromAPIManagerImpl()
+        GetUsersInteractorImpl(getAllUsersFromAPIManager: getAllUsersFromAPI).execute { (users) in
+            self.users = users
+        }
+        getAllUsersFromAPI.downloadAllUsers { (users) in
+            print(users.count)
+        }
     }
 
     override func didReceiveMemoryWarning() {
