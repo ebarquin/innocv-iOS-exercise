@@ -14,6 +14,11 @@
 		9C0ADCCB1F8E178400144FB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C0ADCCA1F8E178400144FB9 /* Assets.xcassets */; };
 		9C0ADCCE1F8E178400144FB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0ADCCC1F8E178400144FB9 /* LaunchScreen.storyboard */; };
 		9C0ADCD91F8E178400144FB9 /* innocvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0ADCD81F8E178400144FB9 /* innocvTests.swift */; };
+		9C0ADCEB1F8E1C5800144FB9 /* GetAllUsersFromAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0ADCEA1F8E1C5800144FB9 /* GetAllUsersFromAPIManager.swift */; };
+		9C0ADCED1F8E1C7B00144FB9 /* GetAllUsersFromAPIManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0ADCEC1F8E1C7B00144FB9 /* GetAllUsersFromAPIManagerImpl.swift */; };
+		9C0ADCEF1F8E1CA700144FB9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0ADCEE1F8E1CA700144FB9 /* Utils.swift */; };
+		9C0ADCF11F8E1D6300144FB9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0ADCF01F8E1D6300144FB9 /* User.swift */; };
+		9C0ADCF21F8E26A900144FB9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0ADCF31F8E26A900144FB9 /* Alamofire.framework */; };
 		E0D83B63336A90E654799B04 /* Pods_innocv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5234381688B8C087551DA235 /* Pods_innocv.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +48,11 @@
 		9C0ADCD41F8E178400144FB9 /* innocvTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = innocvTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C0ADCD81F8E178400144FB9 /* innocvTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = innocvTests.swift; sourceTree = "<group>"; };
 		9C0ADCDA1F8E178400144FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C0ADCEA1F8E1C5800144FB9 /* GetAllUsersFromAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllUsersFromAPIManager.swift; sourceTree = "<group>"; };
+		9C0ADCEC1F8E1C7B00144FB9 /* GetAllUsersFromAPIManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllUsersFromAPIManagerImpl.swift; sourceTree = "<group>"; };
+		9C0ADCEE1F8E1CA700144FB9 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		9C0ADCF01F8E1D6300144FB9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9C0ADCF31F8E26A900144FB9 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF154C088873F69F27DCC40F /* Pods_innocvTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_innocvTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -51,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C0ADCF21F8E26A900144FB9 /* Alamofire.framework in Frameworks */,
 				E0D83B63336A90E654799B04 /* Pods_innocv.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +91,7 @@
 		817342DE245CC44E1145F0B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9C0ADCF31F8E26A900144FB9 /* Alamofire.framework */,
 				5234381688B8C087551DA235 /* Pods_innocv.framework */,
 				DF154C088873F69F27DCC40F /* Pods_innocvTests.framework */,
 			);
@@ -133,6 +145,7 @@
 		9C0ADCE31F8E185700144FB9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9C0ADCF01F8E1D6300144FB9 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -158,6 +171,7 @@
 		9C0ADCE61F8E187200144FB9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9C0ADCEE1F8E1CA700144FB9 /* Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -172,6 +186,8 @@
 		9C0ADCE81F8E189300144FB9 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				9C0ADCEA1F8E1C5800144FB9 /* GetAllUsersFromAPIManager.swift */,
+				9C0ADCEC1F8E1C7B00144FB9 /* GetAllUsersFromAPIManagerImpl.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -386,6 +402,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C0ADCEF1F8E1CA700144FB9 /* Utils.swift in Sources */,
+				9C0ADCF11F8E1D6300144FB9 /* User.swift in Sources */,
+				9C0ADCED1F8E1C7B00144FB9 /* GetAllUsersFromAPIManagerImpl.swift in Sources */,
+				9C0ADCEB1F8E1C5800144FB9 /* GetAllUsersFromAPIManager.swift in Sources */,
 				9C0ADCC61F8E178400144FB9 /* ViewController.swift in Sources */,
 				9C0ADCC41F8E178400144FB9 /* AppDelegate.swift in Sources */,
 			);
