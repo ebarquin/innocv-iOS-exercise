@@ -77,11 +77,13 @@
 		9C0ADCC21F8E178400144FB9 /* innocv */ = {
 			isa = PBXGroup;
 			children = (
-				9C0ADCC31F8E178400144FB9 /* AppDelegate.swift */,
-				9C0ADCC51F8E178400144FB9 /* ViewController.swift */,
-				9C0ADCC71F8E178400144FB9 /* Main.storyboard */,
-				9C0ADCCA1F8E178400144FB9 /* Assets.xcassets */,
-				9C0ADCCC1F8E178400144FB9 /* LaunchScreen.storyboard */,
+				9C0ADCE91F8E189D00144FB9 /* Application Delegate */,
+				9C0ADCE81F8E189300144FB9 /* Managers */,
+				9C0ADCE71F8E187800144FB9 /* Interactors */,
+				9C0ADCE61F8E187200144FB9 /* Utils */,
+				9C0ADCE51F8E186B00144FB9 /* Controllers */,
+				9C0ADCE41F8E186400144FB9 /* Views */,
+				9C0ADCE31F8E185700144FB9 /* Models */,
 				9C0ADCCF1F8E178400144FB9 /* Info.plist */,
 			);
 			path = innocv;
@@ -94,6 +96,60 @@
 				9C0ADCDA1F8E178400144FB9 /* Info.plist */,
 			);
 			path = innocvTests;
+			sourceTree = "<group>";
+		};
+		9C0ADCE31F8E185700144FB9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9C0ADCE41F8E186400144FB9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9C0ADCC71F8E178400144FB9 /* Main.storyboard */,
+				9C0ADCCC1F8E178400144FB9 /* LaunchScreen.storyboard */,
+				9C0ADCCA1F8E178400144FB9 /* Assets.xcassets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9C0ADCE51F8E186B00144FB9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9C0ADCC51F8E178400144FB9 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9C0ADCE61F8E187200144FB9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9C0ADCE71F8E187800144FB9 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		9C0ADCE81F8E189300144FB9 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		9C0ADCE91F8E189D00144FB9 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				9C0ADCC31F8E178400144FB9 /* AppDelegate.swift */,
+			);
+			path = "Application Delegate";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
