@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1BD22AF93F6CF588201B5503 /* Pods_innocvTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF154C088873F69F27DCC40F /* Pods_innocvTests.framework */; };
 		9C0ADCC41F8E178400144FB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0ADCC31F8E178400144FB9 /* AppDelegate.swift */; };
-		9C0ADCC61F8E178400144FB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0ADCC51F8E178400144FB9 /* ViewController.swift */; };
+		9C0ADCC61F8E178400144FB9 /* ListOfUsersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0ADCC51F8E178400144FB9 /* ListOfUsersController.swift */; };
 		9C0ADCC91F8E178400144FB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0ADCC71F8E178400144FB9 /* Main.storyboard */; };
 		9C0ADCCB1F8E178400144FB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C0ADCCA1F8E178400144FB9 /* Assets.xcassets */; };
 		9C0ADCCE1F8E178400144FB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0ADCCC1F8E178400144FB9 /* LaunchScreen.storyboard */; };
@@ -21,6 +21,7 @@
 		9C0ADCF21F8E26A900144FB9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0ADCF31F8E26A900144FB9 /* Alamofire.framework */; };
 		9C0ADCF51F8E781A00144FB9 /* GetUsersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0ADCF41F8E781A00144FB9 /* GetUsersInteractor.swift */; };
 		9C0ADCF71F8E782A00144FB9 /* GetUsersInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0ADCF61F8E782A00144FB9 /* GetUsersInteractorImpl.swift */; };
+		9C0ADCFA1F8F576A00144FB9 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0ADCF91F8F576A00144FB9 /* UserCell.swift */; };
 		E0D83B63336A90E654799B04 /* Pods_innocv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5234381688B8C087551DA235 /* Pods_innocv.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +43,7 @@
 		8AB6FA26D96E014F6B1EE300 /* Pods-innocvTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-innocvTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-innocvTests/Pods-innocvTests.release.xcconfig"; sourceTree = "<group>"; };
 		9C0ADCC01F8E178400144FB9 /* innocv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = innocv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C0ADCC31F8E178400144FB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C0ADCC51F8E178400144FB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C0ADCC51F8E178400144FB9 /* ListOfUsersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfUsersController.swift; sourceTree = "<group>"; };
 		9C0ADCC81F8E178400144FB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C0ADCCA1F8E178400144FB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C0ADCCD1F8E178400144FB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +58,7 @@
 		9C0ADCF31F8E26A900144FB9 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C0ADCF41F8E781A00144FB9 /* GetUsersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsersInteractor.swift; sourceTree = "<group>"; };
 		9C0ADCF61F8E782A00144FB9 /* GetUsersInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsersInteractorImpl.swift; sourceTree = "<group>"; };
+		9C0ADCF91F8F576A00144FB9 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		DF154C088873F69F27DCC40F /* Pods_innocvTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_innocvTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -167,7 +169,8 @@
 		9C0ADCE51F8E186B00144FB9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9C0ADCC51F8E178400144FB9 /* ViewController.swift */,
+				9C0ADCF81F8F574B00144FB9 /* Cell */,
+				9C0ADCC51F8E178400144FB9 /* ListOfUsersController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -204,6 +207,14 @@
 				9C0ADCC31F8E178400144FB9 /* AppDelegate.swift */,
 			);
 			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		9C0ADCF81F8F574B00144FB9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9C0ADCF91F8F576A00144FB9 /* UserCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,7 +424,8 @@
 				9C0ADCF11F8E1D6300144FB9 /* User.swift in Sources */,
 				9C0ADCED1F8E1C7B00144FB9 /* GetAllUsersFromAPIManagerImpl.swift in Sources */,
 				9C0ADCEB1F8E1C5800144FB9 /* GetAllUsersFromAPIManager.swift in Sources */,
-				9C0ADCC61F8E178400144FB9 /* ViewController.swift in Sources */,
+				9C0ADCFA1F8F576A00144FB9 /* UserCell.swift in Sources */,
+				9C0ADCC61F8E178400144FB9 /* ListOfUsersController.swift in Sources */,
 				9C0ADCF71F8E782A00144FB9 /* GetUsersInteractorImpl.swift in Sources */,
 				9C0ADCC41F8E178400144FB9 /* AppDelegate.swift in Sources */,
 			);

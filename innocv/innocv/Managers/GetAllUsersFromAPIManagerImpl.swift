@@ -14,12 +14,14 @@ public class GetAllUsersFromAPIManagerImpl: GetAllUsersFromAPIManager {
                 if let value = response.result.value {
                     let json = JSON(value)
                     
-                    var users = [User]()
+                    let entries = json.arrayValue
                     
-                    for _ in json {
-                        let id = json["id"].intValue
-                        let name = json["name"].stringValue
-                        let birthdayJSON = json["birthday"].stringValue
+                    var users = Users()
+                    
+                    for entry in entries {
+                        let id = entry["id"].intValue
+                        let name = entry["name"].stringValue
+                        let birthdayJSON = entry["birthday"].stringValue
                         let birthday = self.convertDateFormatter(date: birthdayJSON)
                         
                         
