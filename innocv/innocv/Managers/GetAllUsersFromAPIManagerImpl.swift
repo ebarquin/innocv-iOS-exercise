@@ -5,12 +5,11 @@ import SwiftyJSON
 
 public class GetAllUsersFromAPIManagerImpl: GetAllUsersFromAPIManager {
     
-    public func downloadAllUsers(completion: @escaping ([User]) -> Void) {
-        Alamofire.request("http://hello-world.innocv.com/api/user/getall", method: .get).validate().responseJSON { (response) in
+    public func downloadAllUsers(completion: @escaping (Users) -> Void) {
+        Alamofire.request(API_URL, method: .get).validate().responseJSON { (response) in
 
             switch response.result {
             case .success:
-                print("Exito")
                 if let value = response.result.value {
                     let json = JSON(value)
                     

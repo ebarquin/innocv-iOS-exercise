@@ -20,10 +20,6 @@ class ListOfUsersController: UIViewController, UITableViewDelegate, UITableViewD
             self.users = users
             self.tableView.reloadData()
         }
-        getAllUsersFromAPI.downloadAllUsers { (users) in
-            print(users.count)
-            
-        }
         
         tableView.dataSource = self
         tableView.delegate = self
