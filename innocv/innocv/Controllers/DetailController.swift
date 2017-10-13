@@ -2,9 +2,23 @@
 import UIKit
 
 class DetailController: UIViewController {
+    
+    @IBOutlet weak var userId: UILabel!
+    @IBOutlet weak var userName: UITextField!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
+    var user: User?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let user = user {
+            userId.text = "" + "\(user.id ?? 0)"
+            userName.text = user.name
+            datePicker.date = user.birthdate!
+        }
+        
+    
+
 
         // Do any additional setup after loading the view.
     }

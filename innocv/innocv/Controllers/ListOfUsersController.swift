@@ -66,6 +66,18 @@ class ListOfUsersController: UIViewController, UITableViewDelegate, UITableViewD
         cell.userName.text = user.name
     }
     
+    //MARK: - Segue
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailSegue" {
+            if let indexPathSelected = tableView.indexPathsForSelectedRows?.last {
+                let selectedUser = users[indexPathSelected.row]
+                let detailVC = segue.destination as! DetailController
+                detailVC.user = selectedUser
+                
+            }
+        }
+    }
 
 }
 
