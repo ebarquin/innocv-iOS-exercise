@@ -46,6 +46,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="userName" destination="PrE-sA-z8B" id="L1E-t2-QBW"/>
+                                            <segue destination="q5b-t7-Led" kind="show" id="BHt-fk-IxS"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -68,6 +69,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="456.80000000000001" y="118.29085457271366"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NhY-HF-rCD">
+            <objects>
+                <viewController id="q5b-t7-Led" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9QP-Yb-JE8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="ah8-0d-9Dk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J9F-gk-OK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="457" y="945"/>
         </scene>
         <!--New User Controller-->
         <scene sceneID="nWh-WB-HIi">

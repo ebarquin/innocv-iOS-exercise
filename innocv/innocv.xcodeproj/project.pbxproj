@@ -35,6 +35,7 @@
 		9CC6C39D1F90F9C800F795AE /* UpdateUserManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6C39C1F90F9C800F795AE /* UpdateUserManagerImpl.swift */; };
 		9CC6C39F1F90FDCA00F795AE /* UpdateUserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6C39E1F90FDCA00F795AE /* UpdateUserInteractor.swift */; };
 		9CC6C3A11F90FDDC00F795AE /* UpdateUserInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6C3A01F90FDDC00F795AE /* UpdateUserInteractorImpl.swift */; };
+		9CC6C3A51F91037500F795AE /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6C3A41F91037500F795AE /* DetailController.swift */; };
 		E0D83B63336A90E654799B04 /* Pods_innocv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5234381688B8C087551DA235 /* Pods_innocv.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		9CC6C39C1F90F9C800F795AE /* UpdateUserManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserManagerImpl.swift; sourceTree = "<group>"; };
 		9CC6C39E1F90FDCA00F795AE /* UpdateUserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserInteractor.swift; sourceTree = "<group>"; };
 		9CC6C3A01F90FDDC00F795AE /* UpdateUserInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserInteractorImpl.swift; sourceTree = "<group>"; };
+		9CC6C3A41F91037500F795AE /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		DF154C088873F69F27DCC40F /* Pods_innocvTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_innocvTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -198,6 +200,7 @@
 				9C0ADCF81F8F574B00144FB9 /* Cell */,
 				9C0ADCC51F8E178400144FB9 /* ListOfUsersController.swift */,
 				9CC6C38C1F8FD9C100F795AE /* NewUserController.swift */,
+				9CC6C3A41F91037500F795AE /* DetailController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 				9CC6C3971F90F76A00F795AE /* DeleteUserInteractor.swift in Sources */,
 				9CC6C3911F90AB1F00F795AE /* SaveUserInteractorImpl.swift in Sources */,
 				9CC6C3931F90AF3F00F795AE /* DeleteUserManager.swift in Sources */,
+				9CC6C3A51F91037500F795AE /* DetailController.swift in Sources */,
 				9CC6C39B1F90F9B500F795AE /* UpdateUserManager.swift in Sources */,
 				9CC6C39F1F90FDCA00F795AE /* UpdateUserInteractor.swift in Sources */,
 				9C0ADCC61F8E178400144FB9 /* ListOfUsersController.swift in Sources */,
