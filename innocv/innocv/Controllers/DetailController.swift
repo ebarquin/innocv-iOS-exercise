@@ -14,7 +14,9 @@ class DetailController: UIViewController {
         if let user = user {
             userId.text = "" + "\(user.id ?? 0)"
             userName.text = user.name
+            datePicker.setValue(UIColor.white, forKey: "textColor")
             datePicker.date = user.birthdate!
+            
         }
         
     
