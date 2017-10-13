@@ -27,6 +27,10 @@
 		9CC6C38D1F8FD9C100F795AE /* NewUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6C38C1F8FD9C100F795AE /* NewUserController.swift */; };
 		9CC6C38F1F90AB1000F795AE /* SaveUserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6C38E1F90AB1000F795AE /* SaveUserInteractor.swift */; };
 		9CC6C3911F90AB1F00F795AE /* SaveUserInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6C3901F90AB1F00F795AE /* SaveUserInteractorImpl.swift */; };
+		9CC6C3931F90AF3F00F795AE /* DeleteUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6C3921F90AF3F00F795AE /* DeleteUserManager.swift */; };
+		9CC6C3951F90AF5600F795AE /* DeleteUserManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6C3941F90AF5600F795AE /* DeleteUserManagerImpl.swift */; };
+		9CC6C3971F90F76A00F795AE /* DeleteUserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6C3961F90F76A00F795AE /* DeleteUserInteractor.swift */; };
+		9CC6C3991F90F77900F795AE /* DeleteUserInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6C3981F90F77900F795AE /* DeleteUserInteractorImpl.swift */; };
 		E0D83B63336A90E654799B04 /* Pods_innocv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5234381688B8C087551DA235 /* Pods_innocv.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +73,10 @@
 		9CC6C38C1F8FD9C100F795AE /* NewUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserController.swift; sourceTree = "<group>"; };
 		9CC6C38E1F90AB1000F795AE /* SaveUserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveUserInteractor.swift; sourceTree = "<group>"; };
 		9CC6C3901F90AB1F00F795AE /* SaveUserInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveUserInteractorImpl.swift; sourceTree = "<group>"; };
+		9CC6C3921F90AF3F00F795AE /* DeleteUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserManager.swift; sourceTree = "<group>"; };
+		9CC6C3941F90AF5600F795AE /* DeleteUserManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserManagerImpl.swift; sourceTree = "<group>"; };
+		9CC6C3961F90F76A00F795AE /* DeleteUserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserInteractor.swift; sourceTree = "<group>"; };
+		9CC6C3981F90F77900F795AE /* DeleteUserInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserInteractorImpl.swift; sourceTree = "<group>"; };
 		DF154C088873F69F27DCC40F /* Pods_innocvTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_innocvTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -201,6 +209,8 @@
 				9C0ADCF61F8E782A00144FB9 /* GetUsersInteractorImpl.swift */,
 				9CC6C38E1F90AB1000F795AE /* SaveUserInteractor.swift */,
 				9CC6C3901F90AB1F00F795AE /* SaveUserInteractorImpl.swift */,
+				9CC6C3961F90F76A00F795AE /* DeleteUserInteractor.swift */,
+				9CC6C3981F90F77900F795AE /* DeleteUserInteractorImpl.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -212,6 +222,8 @@
 				9C0ADCEC1F8E1C7B00144FB9 /* GetAllUsersFromAPIManagerImpl.swift */,
 				9C4EFCB61F8FBA2900837567 /* SaveUserManager.swift */,
 				9C4EFCB81F8FBA5700837567 /* SaveUserManagerImpl.swift */,
+				9CC6C3921F90AF3F00F795AE /* DeleteUserManager.swift */,
+				9CC6C3941F90AF5600F795AE /* DeleteUserManagerImpl.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -439,10 +451,14 @@
 				9C0ADCF51F8E781A00144FB9 /* GetUsersInteractor.swift in Sources */,
 				9C0ADCF11F8E1D6300144FB9 /* User.swift in Sources */,
 				9CC6C38F1F90AB1000F795AE /* SaveUserInteractor.swift in Sources */,
+				9CC6C3951F90AF5600F795AE /* DeleteUserManagerImpl.swift in Sources */,
+				9CC6C3991F90F77900F795AE /* DeleteUserInteractorImpl.swift in Sources */,
 				9C0ADCED1F8E1C7B00144FB9 /* GetAllUsersFromAPIManagerImpl.swift in Sources */,
 				9C0ADCEB1F8E1C5800144FB9 /* GetAllUsersFromAPIManager.swift in Sources */,
 				9C0ADCFA1F8F576A00144FB9 /* UserCell.swift in Sources */,
+				9CC6C3971F90F76A00F795AE /* DeleteUserInteractor.swift in Sources */,
 				9CC6C3911F90AB1F00F795AE /* SaveUserInteractorImpl.swift in Sources */,
+				9CC6C3931F90AF3F00F795AE /* DeleteUserManager.swift in Sources */,
 				9C0ADCC61F8E178400144FB9 /* ListOfUsersController.swift in Sources */,
 				9C0ADCF71F8E782A00144FB9 /* GetUsersInteractorImpl.swift in Sources */,
 				9C0ADCC41F8E178400144FB9 /* AppDelegate.swift in Sources */,

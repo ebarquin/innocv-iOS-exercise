@@ -10,7 +10,9 @@ class NewUserController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-
+        let deleteUserManager = DeleteUserManagerImpl()
+        deleteUserManager.deleteUser(id: 3596)
+        
     }
 
     override func didReceiveMemoryWarning() {
