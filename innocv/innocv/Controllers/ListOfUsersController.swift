@@ -1,10 +1,3 @@
-//
-//  ListOfUsersController.swift
-//  innocv
-//
-//  Created by Eugenio Barquín on 11/10/17.
-//  Copyright © 2017 Eugenio Barquín. All rights reserved.
-//
 
 import UIKit
 

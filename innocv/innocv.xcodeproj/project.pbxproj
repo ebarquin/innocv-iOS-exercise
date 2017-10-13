@@ -22,6 +22,9 @@
 		9C0ADCF51F8E781A00144FB9 /* GetUsersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0ADCF41F8E781A00144FB9 /* GetUsersInteractor.swift */; };
 		9C0ADCF71F8E782A00144FB9 /* GetUsersInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0ADCF61F8E782A00144FB9 /* GetUsersInteractorImpl.swift */; };
 		9C0ADCFA1F8F576A00144FB9 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0ADCF91F8F576A00144FB9 /* UserCell.swift */; };
+		9C4EFCB71F8FBA2900837567 /* SaveUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EFCB61F8FBA2900837567 /* SaveUserManager.swift */; };
+		9C4EFCB91F8FBA5700837567 /* SaveUserManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EFCB81F8FBA5700837567 /* SaveUserManagerImpl.swift */; };
+		9CC6C38D1F8FD9C100F795AE /* NewUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6C38C1F8FD9C100F795AE /* NewUserController.swift */; };
 		E0D83B63336A90E654799B04 /* Pods_innocv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5234381688B8C087551DA235 /* Pods_innocv.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +62,9 @@
 		9C0ADCF41F8E781A00144FB9 /* GetUsersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsersInteractor.swift; sourceTree = "<group>"; };
 		9C0ADCF61F8E782A00144FB9 /* GetUsersInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsersInteractorImpl.swift; sourceTree = "<group>"; };
 		9C0ADCF91F8F576A00144FB9 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		9C4EFCB61F8FBA2900837567 /* SaveUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveUserManager.swift; sourceTree = "<group>"; };
+		9C4EFCB81F8FBA5700837567 /* SaveUserManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveUserManagerImpl.swift; sourceTree = "<group>"; };
+		9CC6C38C1F8FD9C100F795AE /* NewUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserController.swift; sourceTree = "<group>"; };
 		DF154C088873F69F27DCC40F /* Pods_innocvTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_innocvTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -171,6 +177,7 @@
 			children = (
 				9C0ADCF81F8F574B00144FB9 /* Cell */,
 				9C0ADCC51F8E178400144FB9 /* ListOfUsersController.swift */,
+				9CC6C38C1F8FD9C100F795AE /* NewUserController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -197,6 +204,8 @@
 			children = (
 				9C0ADCEA1F8E1C5800144FB9 /* GetAllUsersFromAPIManager.swift */,
 				9C0ADCEC1F8E1C7B00144FB9 /* GetAllUsersFromAPIManagerImpl.swift */,
+				9C4EFCB61F8FBA2900837567 /* SaveUserManager.swift */,
+				9C4EFCB81F8FBA5700837567 /* SaveUserManagerImpl.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -419,6 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C4EFCB71F8FBA2900837567 /* SaveUserManager.swift in Sources */,
 				9C0ADCEF1F8E1CA700144FB9 /* Utils.swift in Sources */,
 				9C0ADCF51F8E781A00144FB9 /* GetUsersInteractor.swift in Sources */,
 				9C0ADCF11F8E1D6300144FB9 /* User.swift in Sources */,
@@ -428,6 +438,8 @@
 				9C0ADCC61F8E178400144FB9 /* ListOfUsersController.swift in Sources */,
 				9C0ADCF71F8E782A00144FB9 /* GetUsersInteractorImpl.swift in Sources */,
 				9C0ADCC41F8E178400144FB9 /* AppDelegate.swift in Sources */,
+				9C4EFCB91F8FBA5700837567 /* SaveUserManagerImpl.swift in Sources */,
+				9CC6C38D1F8FD9C100F795AE /* NewUserController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

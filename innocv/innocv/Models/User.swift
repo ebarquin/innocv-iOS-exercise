@@ -11,5 +11,11 @@ public class User {
         self.name = name
         self.birthdate = birthdate
     }
+    
+    public func idToString(id: Int) -> String {
+        return "\(id)"
+        
+        
+    }
 }
 
