@@ -26,6 +26,24 @@ class ListOfUsersController: UIViewController, UITableViewDelegate, UITableViewD
 
     //MARK: - TableView
     
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let title = UILabel()
+        title.textColor = UIColor.black
+        
+        let header = view as! UITableViewHeaderFooterView
+        header.textLabel!.font=title.font
+        header.textLabel!.textColor=title.textColor
+        header.contentView.backgroundColor = UIColor(red:208/255, green:226/255, blue: 237/255, alpha: 1.0)
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let title = "Users"
+        switch(section) {
+        case 0: return title
+        default: return ""
+        }
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
