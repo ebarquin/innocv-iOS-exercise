@@ -4,7 +4,7 @@ import Alamofire
 import SwiftyJSON
 
 public class SaveUserManagerImpl: SaveUserManager {
-    func public saveUser (name: String, birthdate: String){
+    public func saveUser (name: String, birthdate: String){
         let url = "http://hello-world.innocv.com/api/user/create"
         let headers = [ "Content-Type" : "application/json"]
         let parametersObject = ["name": name, "birthdate": birthdate]
