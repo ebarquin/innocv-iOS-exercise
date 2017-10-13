@@ -1,0 +1,16 @@
+
+
+import Foundation
+
+public class UpdateUserInteractorImpl: UpdateUserInteractor {
+    let updateUserManager: UpdateUserManagerImpl
+    
+    public init (updateUserManager:UpdateUserManagerImpl) {
+        self.updateUserManager = updateUserManager
+    }
+    
+    public func execute(id: Int, name: String, birthdate: String) {
+        updateUserManager.updateUser(id: id, name: name, birthdate: birthdate)
+    }
+    
+}
