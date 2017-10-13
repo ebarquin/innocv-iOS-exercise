@@ -18,27 +18,16 @@ class DetailController: UIViewController {
             datePicker.date = user.birthdate!
             
         }
+
+    }
+
+    @IBAction func saveUser(_ sender: Any) {
+        if let user = user {
+            let updateUser = UpdateUserManagerImpl()
+            UpdateUserInteractorImpl(updateUserManager: updateUser).execute(id: user.id!, name: user.name!, birthdate: datePicker.date)
+        }
         
-    
-
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

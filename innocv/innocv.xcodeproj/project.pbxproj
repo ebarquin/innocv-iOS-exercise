@@ -24,6 +24,7 @@
 		9C0ADCFA1F8F576A00144FB9 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0ADCF91F8F576A00144FB9 /* UserCell.swift */; };
 		9C4EFCB71F8FBA2900837567 /* SaveUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EFCB61F8FBA2900837567 /* SaveUserManager.swift */; };
 		9C4EFCB91F8FBA5700837567 /* SaveUserManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EFCB81F8FBA5700837567 /* SaveUserManagerImpl.swift */; };
+		9CB09EEF1F91507100195A72 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB09EEE1F91507100195A72 /* Date.swift */; };
 		9CC6C38D1F8FD9C100F795AE /* NewUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6C38C1F8FD9C100F795AE /* NewUserController.swift */; };
 		9CC6C38F1F90AB1000F795AE /* SaveUserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6C38E1F90AB1000F795AE /* SaveUserInteractor.swift */; };
 		9CC6C3911F90AB1F00F795AE /* SaveUserInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6C3901F90AB1F00F795AE /* SaveUserInteractorImpl.swift */; };
@@ -75,6 +76,7 @@
 		9C0ADCF91F8F576A00144FB9 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		9C4EFCB61F8FBA2900837567 /* SaveUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveUserManager.swift; sourceTree = "<group>"; };
 		9C4EFCB81F8FBA5700837567 /* SaveUserManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveUserManagerImpl.swift; sourceTree = "<group>"; };
+		9CB09EEE1F91507100195A72 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		9CC6C38C1F8FD9C100F795AE /* NewUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserController.swift; sourceTree = "<group>"; };
 		9CC6C38E1F90AB1000F795AE /* SaveUserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveUserInteractor.swift; sourceTree = "<group>"; };
 		9CC6C3901F90AB1F00F795AE /* SaveUserInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveUserInteractorImpl.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 		9C0ADCC21F8E178400144FB9 /* innocv */ = {
 			isa = PBXGroup;
 			children = (
+				9CB09EED1F91505700195A72 /* Extensions */,
 				9C0ADCE91F8E189D00144FB9 /* Application Delegate */,
 				9C0ADCE81F8E189300144FB9 /* Managers */,
 				9C0ADCE71F8E187800144FB9 /* Interactors */,
@@ -257,6 +260,14 @@
 				9C0ADCF91F8F576A00144FB9 /* UserCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		9CB09EED1F91505700195A72 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9CB09EEE1F91507100195A72 /* Date.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -480,6 +491,7 @@
 				9C0ADCC61F8E178400144FB9 /* ListOfUsersController.swift in Sources */,
 				9CC6C3A11F90FDDC00F795AE /* UpdateUserInteractorImpl.swift in Sources */,
 				9C0ADCF71F8E782A00144FB9 /* GetUsersInteractorImpl.swift in Sources */,
+				9CB09EEF1F91507100195A72 /* Date.swift in Sources */,
 				9CC6C39D1F90F9C800F795AE /* UpdateUserManagerImpl.swift in Sources */,
 				9C0ADCC41F8E178400144FB9 /* AppDelegate.swift in Sources */,
 				9C4EFCB91F8FBA5700837567 /* SaveUserManagerImpl.swift in Sources */,

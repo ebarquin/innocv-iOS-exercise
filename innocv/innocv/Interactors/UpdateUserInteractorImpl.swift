@@ -9,7 +9,7 @@ public class UpdateUserInteractorImpl: UpdateUserInteractor {
         self.updateUserManager = updateUserManager
     }
     
-    public func execute(id: Int, name: String, birthdate: String) {
+    public func execute(id: Int, name: String, birthdate: Date) {
         updateUserManager.updateUser(id: id, name: name, birthdate: birthdate)
     }
     
