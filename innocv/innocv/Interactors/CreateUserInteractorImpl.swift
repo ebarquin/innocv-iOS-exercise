@@ -9,7 +9,7 @@ public class CreateUserInteractorImpl: CreateUserInteractor {
         self.createUserManager = createUserManager
     }
     
-    public func execute (name: String, birthdate: String) {
+    public func execute (name: String, birthdate: Date) {
         createUserManager.createUser(name: name, birthdate: birthdate)
     }
 }

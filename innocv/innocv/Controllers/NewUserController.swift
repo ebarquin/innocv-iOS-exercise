@@ -13,10 +13,14 @@ class NewUserController: UIViewController {
     }
 
     @IBAction func createUser(_ sender: Any) {
+        let name = userName.text
+        let birthdate = userBirthdate.date
         if userName.text == "" {
             //TODO: Implement warning
         } else {
             //TODO: Create Interactor
+            let createUser = CreateUserManagerImpl()
+            CreateUserInteractorImpl(createUserManager: createUser).execute(name: name!, birthdate: birthdate)
         }
 
     }

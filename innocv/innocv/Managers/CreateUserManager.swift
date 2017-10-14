@@ -3,5 +3,5 @@
 import Foundation
 
 public protocol CreateUserManager {
-    func createUser (name: String, birthdate: String)
+    func createUser (name: String, birthdate: Date)
 }
