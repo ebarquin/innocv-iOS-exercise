@@ -1,7 +1,7 @@
 
 import Foundation
 
-public class CreateUserInteractorImpl: CreateUserInteractor {
+public class CreateUserInteractorImpl: CreateUserInteractor  {
     
     let createUserManager: CreateUserManagerImpl
     
@@ -11,5 +11,6 @@ public class CreateUserInteractorImpl: CreateUserInteractor {
     
     public func execute (name: String, birthdate: Date) {
         createUserManager.createUser(name: name, birthdate: birthdate)
+        
     }
 }

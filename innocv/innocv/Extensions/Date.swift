@@ -11,4 +11,13 @@ extension Date {
         let dateString = dateFormatter.string(from: date)
         return dateString
     }
+    
+    static func dateFormat(string:String) -> Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = BACKEND_FORMAT
+        if let date = dateFormatter.date(from: string) {
+            return date
+        }
+        return Date()
+    }
 }

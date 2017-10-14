@@ -13,6 +13,7 @@ class NewUserController: UIViewController {
     }
 
     @IBAction func createUser(_ sender: Any) {
+        
         let name = userName.text
         let birthdate = userBirthdate.date
         if userName.text == "" {
@@ -27,9 +28,13 @@ class NewUserController: UIViewController {
             let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
             let ok = UIAlertAction(title: "Ok", style: .default, handler: { (ok) in
                 let createUser = CreateUserManagerImpl()
-                CreateUserInteractorImpl(createUserManager: createUser).execute(name: name!, birthdate: birthdate)
+                let queue = DispatchQueue(label: "queueCreate")
+                queue.sync {
+                    CreateUserInteractorImpl(createUserManager: createUser).execute(name: name!, birthdate: birthdate)
+                }
                 self.navigationController?.popViewController(animated: true)
             })
+            
             alertInsert.addAction(ok)
             alertInsert.addAction(cancel)
             self.present(alertInsert, animated: true, completion: nil)

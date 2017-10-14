@@ -18,6 +18,20 @@ class ListOfUsersController: UIViewController, UITableViewDelegate, UITableViewD
         tableView.delegate = self
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        DispatchQueue.main.async {
+            let getAllUsersFromAPI = GetAllUsersFromAPIManagerImpl()
+            DispatchQueue.main.async {
+                GetUsersInteractorImpl(getAllUsersFromAPIManager: getAllUsersFromAPI).execute { (users) in
+                    self.users = users
+                    self.tableView.reloadData()
+            }
+            
+            }
+        }
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -31,8 +45,8 @@ class ListOfUsersController: UIViewController, UITableViewDelegate, UITableViewD
         title.textColor = UIColor.black
         
         let header = view as! UITableViewHeaderFooterView
-        header.textLabel!.font=title.font
-        header.textLabel!.textColor=title.textColor
+        header.textLabel!.font = title.font
+        header.textLabel!.textColor = title.textColor
         header.contentView.backgroundColor = UIColor(red:208/255, green:226/255, blue: 237/255, alpha: 1.0)
     }
     

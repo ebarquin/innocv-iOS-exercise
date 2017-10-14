@@ -26,7 +26,7 @@
 		9C4EFCB91F8FBA5700837567 /* SaveUserManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EFCB81F8FBA5700837567 /* SaveUserManagerImpl.swift */; };
 		9CB09EEF1F91507100195A72 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB09EEE1F91507100195A72 /* Date.swift */; };
 		9CB09EF11F91F70000195A72 /* CreateUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB09EF01F91F70000195A72 /* CreateUserManager.swift */; };
-		9CB09EF31F91F72300195A72 /* CreateUserImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB09EF21F91F72300195A72 /* CreateUserImpl.swift */; };
+		9CB09EF31F91F72300195A72 /* CreateUserManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB09EF21F91F72300195A72 /* CreateUserManagerImpl.swift */; };
 		9CC6C38D1F8FD9C100F795AE /* NewUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6C38C1F8FD9C100F795AE /* NewUserController.swift */; };
 		9CC6C38F1F90AB1000F795AE /* SaveUserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6C38E1F90AB1000F795AE /* SaveUserInteractor.swift */; };
 		9CC6C3911F90AB1F00F795AE /* SaveUserInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6C3901F90AB1F00F795AE /* SaveUserInteractorImpl.swift */; };
@@ -82,7 +82,7 @@
 		9C4EFCB81F8FBA5700837567 /* SaveUserManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveUserManagerImpl.swift; sourceTree = "<group>"; };
 		9CB09EEE1F91507100195A72 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		9CB09EF01F91F70000195A72 /* CreateUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserManager.swift; sourceTree = "<group>"; };
-		9CB09EF21F91F72300195A72 /* CreateUserImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserImpl.swift; sourceTree = "<group>"; };
+		9CB09EF21F91F72300195A72 /* CreateUserManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserManagerImpl.swift; sourceTree = "<group>"; };
 		9CC6C38C1F8FD9C100F795AE /* NewUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserController.swift; sourceTree = "<group>"; };
 		9CC6C38E1F90AB1000F795AE /* SaveUserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveUserInteractor.swift; sourceTree = "<group>"; };
 		9CC6C3901F90AB1F00F795AE /* SaveUserInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveUserInteractorImpl.swift; sourceTree = "<group>"; };
@@ -253,7 +253,7 @@
 				9CC6C39A1F90F9B500F795AE /* UpdateUserManager.swift */,
 				9CC6C39C1F90F9C800F795AE /* UpdateUserManagerImpl.swift */,
 				9CB09EF01F91F70000195A72 /* CreateUserManager.swift */,
-				9CB09EF21F91F72300195A72 /* CreateUserImpl.swift */,
+				9CB09EF21F91F72300195A72 /* CreateUserManagerImpl.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -510,7 +510,7 @@
 				9CC6C39D1F90F9C800F795AE /* UpdateUserManagerImpl.swift in Sources */,
 				9C0ADCC41F8E178400144FB9 /* AppDelegate.swift in Sources */,
 				9C4EFCB91F8FBA5700837567 /* SaveUserManagerImpl.swift in Sources */,
-				9CB09EF31F91F72300195A72 /* CreateUserImpl.swift in Sources */,
+				9CB09EF31F91F72300195A72 /* CreateUserManagerImpl.swift in Sources */,
 				9CC6C38D1F8FD9C100F795AE /* NewUserController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

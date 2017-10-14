@@ -12,6 +12,8 @@ public class DeleteUserManagerImpl: DeleteUserManager {
                 print("Exito")
             case .failure:
                 print("no se ha podido borrar")
+                //TODO: Correct the failure because there is no response. It works properly
+                //but when API answers, means there is an error.
             }
         }
     }
