@@ -23,8 +23,20 @@ class DetailController: UIViewController {
 
     @IBAction func saveUser(_ sender: Any) {
         if let user = user {
-            let updateUser = UpdateUserManagerImpl()
-            UpdateUserInteractorImpl(updateUserManager: updateUser).execute(id: user.id!, name: user.name!, birthdate: datePicker.date)
+            
+            let alertInsert = UIAlertController(title: "Save user", message: "Do you want to save the user?", preferredStyle: .alert)
+            let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            let ok = UIAlertAction(title: "Ok", style: .default, handler: { (ok) in
+                let updateUser = UpdateUserManagerImpl()
+                UpdateUserInteractorImpl(updateUserManager: updateUser).execute(id: user.id!, name: user.name!, birthdate: self.datePicker.date)
+                self.navigationController?.popViewController(animated: true)
+            })
+            
+            alertInsert.addAction(ok)
+            alertInsert.addAction(cancel)
+            self.present(alertInsert, animated: true, completion: nil)
+            
+            
         }
         
         
@@ -33,8 +45,22 @@ class DetailController: UIViewController {
 
     @IBAction func deleteUser(_ sender: Any) {
         if let user = user {
-            let deleteUser = DeleteUserManagerImpl()
-            DeleteUserInteractorImpl(deleteUserManager: deleteUser).execute(id: user.id!)
+        
+            let alertInsert = UIAlertController(title: "Delete user", message: "Do you want to delete the user?", preferredStyle: .alert)
+            let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            let ok = UIAlertAction(title: "Ok", style: .default, handler: { (ok) in
+                let deleteUser = DeleteUserManagerImpl()
+                DeleteUserInteractorImpl(deleteUserManager: deleteUser).execute(id: user.id!)
+                self.navigationController?.popViewController(animated: true)
+            })
+            
+            alertInsert.addAction(ok)
+            alertInsert.addAction(cancel)
+            self.present(alertInsert, animated: true, completion: nil)
+            
+            
+            }
+            
         }
     }
-}
+

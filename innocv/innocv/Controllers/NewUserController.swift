@@ -23,12 +23,12 @@ class NewUserController: UIViewController {
         } else {
             
             
-            let alertInsert = UIAlertController(title: "Save user", message: "Do you want to save the user?", preferredStyle: .alert)
+            let alertInsert = UIAlertController(title: "Save user", message: "Do you want to create the user?", preferredStyle: .alert)
             let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
             let ok = UIAlertAction(title: "Ok", style: .default, handler: { (ok) in
                 let createUser = CreateUserManagerImpl()
                 CreateUserInteractorImpl(createUserManager: createUser).execute(name: name!, birthdate: birthdate)
-                self.dismiss(animated: true, completion: nil)
+                self.navigationController?.popViewController(animated: true)
             })
             alertInsert.addAction(ok)
             alertInsert.addAction(cancel)

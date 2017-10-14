@@ -11,7 +11,7 @@ public class DeleteUserManagerImpl: DeleteUserManager {
             case .success:
                 print("Exito")
             case .failure:
-                print("cagada")
+                print("no se ha podido borrar")
             }
         }
     }
