@@ -30,4 +30,11 @@ class DetailController: UIViewController {
         
     }
     
+
+    @IBAction func deleteUser(_ sender: Any) {
+        if let user = user {
+            let deleteUser = DeleteUserManagerImpl()
+            DeleteUserInteractorImpl(deleteUserManager: deleteUser).execute(id: user.id!)
+        }
+    }
 }
