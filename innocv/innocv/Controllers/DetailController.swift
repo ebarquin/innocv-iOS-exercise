@@ -28,11 +28,10 @@ class DetailController: UIViewController {
             let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
             let ok = UIAlertAction(title: "Ok", style: .default, handler: { (ok) in
                 let updateUser = UpdateUserManagerImpl()
-                let queue = DispatchQueue(label: "queueUpdate")
-                queue.sync {
-                    UpdateUserInteractorImpl(updateUserManager: updateUser).execute(id: user.id!, name: user.name!, birthdate: self.datePicker.date)
-                }
                 
+                
+                
+                UpdateUserInteractorImpl(updateUserManager: updateUser).execute(id: user.id!, name: user.name!, birthdate: self.datePicker.date)
                 self.navigationController?.popViewController(animated: true)
             })
             
@@ -56,11 +55,15 @@ class DetailController: UIViewController {
             let ok = UIAlertAction(title: "Ok", style: .default, handler: { (ok) in
                 
                 let deleteUser = DeleteUserManagerImpl()
-                let queue = DispatchQueue(label: "queueDelete")
-                queue.sync {
-                    DeleteUserInteractorImpl(deleteUserManager: deleteUser).execute(id: user.id!)
-                }
-                self.navigationController?.popViewController(animated: true)
+                
+                DeleteUserInteractorImpl(deleteUserManager: deleteUser).execute(id: user.id!, completion: {
+                    (message) in
+                    print(message)
+                    self.navigationController?.popViewController(animated: true)
+                })
+                
+                
+                
                 
             })
             

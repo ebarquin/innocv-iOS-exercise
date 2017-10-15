@@ -28,11 +28,16 @@ class NewUserController: UIViewController {
             let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
             let ok = UIAlertAction(title: "Ok", style: .default, handler: { (ok) in
                 let createUser = CreateUserManagerImpl()
-                let queue = DispatchQueue(label: "queueCreate")
-                queue.sync {
-                    CreateUserInteractorImpl(createUserManager: createUser).execute(name: name!, birthdate: birthdate)
-                }
-                self.navigationController?.popViewController(animated: true)
+                
+                CreateUserInteractorImpl(createUserManager: createUser).execute(name: name!, birthdate: birthdate, completion: { (message) in
+                    print(message)
+                    self.navigationController?.popViewController(animated: true)
+                })
+                
+                
+                
+                
+                
             })
             
             alertInsert.addAction(ok)

@@ -9,8 +9,10 @@ public class SaveUserInteractorImpl: SaveUserInteractor{
         self.saveUserManager = saveUserManager
     }
     
-    public func execute(name: String, birthdate: String) {
-        saveUserManager.saveUser(name: name, birthdate: birthdate)
+    public func execute(name: String, birthdate: String, completion: @escaping (String) -> Void) {
+        saveUserManager.saveUser(name: name, birthdate: birthdate) { message in
+            completion(message)
+        }
     }
     
 }

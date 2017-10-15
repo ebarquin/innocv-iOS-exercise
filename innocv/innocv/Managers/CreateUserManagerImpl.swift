@@ -4,7 +4,7 @@ import Alamofire
 
 public class CreateUserManagerImpl: CreateUserManager {
     
-    public func createUser (name: String, birthdate: Date) {
+    public func createUser (name: String, birthdate: Date, completion: @escaping (String) -> Void) {
         
         let birthdayString = Date.backendFormat(date: birthdate)
     
@@ -12,7 +12,7 @@ public class CreateUserManagerImpl: CreateUserManager {
         Alamofire.request(API_CREATE_URL, method: .post, parameters: parametersObject, encoding: JSONEncoding.default, headers: HTTP_HEADERS).responseJSON { (response) in
             switch response.result {
             case .success:
-                print("Exito")
+                completion("Usuario creado")
             case .failure:
                 print("cagada")
             }

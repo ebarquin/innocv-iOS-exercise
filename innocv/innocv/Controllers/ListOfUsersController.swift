@@ -7,7 +7,6 @@ class ListOfUsersController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         let getAllUsersFromAPI = GetAllUsersFromAPIManagerImpl()
         GetUsersInteractorImpl(getAllUsersFromAPIManager: getAllUsersFromAPI).execute { (users) in
             self.users = users
@@ -22,9 +21,10 @@ class ListOfUsersController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewWillAppear(_ animated: Bool) {
         DispatchQueue.main.async {
             let getAllUsersFromAPI = GetAllUsersFromAPIManagerImpl()
-            DispatchQueue.main.async {
-                GetUsersInteractorImpl(getAllUsersFromAPIManager: getAllUsersFromAPI).execute { (users) in
-                    self.users = users
+            
+            GetUsersInteractorImpl(getAllUsersFromAPIManager: getAllUsersFromAPI).execute { (users) in
+                self.users = users
+                DispatchQueue.main.async {
                     self.tableView.reloadData()
             }
             

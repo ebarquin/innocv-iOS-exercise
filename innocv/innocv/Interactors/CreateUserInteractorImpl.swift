@@ -9,8 +9,11 @@ public class CreateUserInteractorImpl: CreateUserInteractor  {
         self.createUserManager = createUserManager
     }
     
-    public func execute (name: String, birthdate: Date) {
-        createUserManager.createUser(name: name, birthdate: birthdate)
+    public func execute (name: String, birthdate: Date, completion: @escaping (String) -> Void) {
+        createUserManager.createUser(name: name, birthdate: birthdate) { message in
+            completion(message)
+            
+        }
         
     }
 }
