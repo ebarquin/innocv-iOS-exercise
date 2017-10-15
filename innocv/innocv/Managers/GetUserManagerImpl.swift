@@ -8,7 +8,7 @@ public class GetUserManagerImpl: GetUserManager {
     public func downloadUser( id: Int, completion: @escaping (User) -> Void) {
         let parametersObject = ["id" : id]
 
-        Alamofire.request(API_DELETE_URL + "\(id)", method: .get, parameters: parametersObject, encoding: JSONEncoding.default, headers: HTTP_HEADERS).responseJSON { (response) in
+        Alamofire.request(ApiDeleteURL + "\(id)", method: .get, parameters: parametersObject, encoding: JSONEncoding.default, headers: HTTP_HEADERS).responseJSON { (response) in
             switch response.result {
             case .success:
                 if let value = response.result.value {

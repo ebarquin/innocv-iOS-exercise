@@ -7,11 +7,16 @@ class ListOfUsersController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.reloadData), name: NSNotification.Name(rawValue: UpdateNotification), object: nil)
+        
         let getAllUsersFromAPI = GetAllUsersFromAPIManagerImpl()
         GetUsersInteractorImpl(getAllUsersFromAPIManager: getAllUsersFromAPI).execute { (users) in
             self.users = users
             self.tableView.reloadData()
+            
         }
+        
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -19,16 +24,14 @@ class ListOfUsersController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        DispatchQueue.main.async {
-            let getAllUsersFromAPI = GetAllUsersFromAPIManagerImpl()
+        
+        let getAllUsersFromAPI = GetAllUsersFromAPIManagerImpl()
+        
+        GetUsersInteractorImpl(getAllUsersFromAPIManager: getAllUsersFromAPI).execute { (users) in
+            self.users = users
             
-            GetUsersInteractorImpl(getAllUsersFromAPIManager: getAllUsersFromAPI).execute { (users) in
-                self.users = users
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-            }
             
-            }
+            
         }
         
     }
@@ -91,6 +94,9 @@ class ListOfUsersController: UIViewController, UITableViewDelegate, UITableViewD
                 
             }
         }
+    }
+    @objc func reloadData() {
+        self.tableView.reloadData()
     }
 
 }

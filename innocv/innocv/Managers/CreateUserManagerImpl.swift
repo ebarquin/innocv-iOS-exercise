@@ -9,7 +9,7 @@ public class CreateUserManagerImpl: CreateUserManager {
         let birthdayString = Date.backendFormat(date: birthdate)
     
         let parametersObject = ["name": name, "birthdate": birthdayString]
-        Alamofire.request(API_CREATE_URL, method: .post, parameters: parametersObject, encoding: JSONEncoding.default, headers: HTTP_HEADERS).responseJSON { (response) in
+        Alamofire.request(ApiCreateURL, method: .post, parameters: parametersObject, encoding: JSONEncoding.default, headers: HTTP_HEADERS).responseJSON { (response) in
             switch response.result {
             case .success:
                 completion("Usuario creado")

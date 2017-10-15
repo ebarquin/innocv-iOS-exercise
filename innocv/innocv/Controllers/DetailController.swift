@@ -27,10 +27,8 @@ class DetailController: UIViewController {
             let alertInsert = UIAlertController(title: "Save user", message: "Do you want to save the user?", preferredStyle: .alert)
             let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
             let ok = UIAlertAction(title: "Ok", style: .default, handler: { (ok) in
+                
                 let updateUser = UpdateUserManagerImpl()
-                
-                
-                
                 UpdateUserInteractorImpl(updateUserManager: updateUser).execute(id: user.id!, name: user.name!, birthdate: self.datePicker.date)
                 self.navigationController?.popViewController(animated: true)
             })

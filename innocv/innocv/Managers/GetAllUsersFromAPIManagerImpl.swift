@@ -6,7 +6,7 @@ import SwiftyJSON
 public class GetAllUsersFromAPIManagerImpl: GetAllUsersFromAPIManager {
     
     public func downloadAllUsers(completion: @escaping (Users) -> Void) {
-        Alamofire.request(API_URL, method: .get).validate().responseJSON { (response) in
+        Alamofire.request(ApiURL, method: .get).validate().responseJSON { (response) in
 
             switch response.result {
             case .success:

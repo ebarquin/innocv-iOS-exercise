@@ -12,8 +12,11 @@ public let CELL_IDENTIFIER = "cellId"
 public let HTTP_HEADERS = [ "Content-Type" : "application/json"]
 
 //MARK: - Endpoints
-public let API_URL = "http://hello-world.innocv.com/api/user/getall"
-public let API_SAVE_URL = "http://hello-world.innocv.com/api/user/create"
-public let API_DELETE_URL = "http://hello-world.innocv.com/api/user/remove/"
-public let API_UPDATE_URL = "http://hello-world.innocv.com/api/user/update"
-public let API_CREATE_URL = "http://hello-world.innocv.com/api/user/create"
+public let ApiURL = "http://hello-world.innocv.com/api/user/getall"
+public let ApiSaveURL = "http://hello-world.innocv.com/api/user/create"
+public let ApiDeleteURL = "http://hello-world.innocv.com/api/user/remove/"
+public let ApiUpdateURL = "http://hello-world.innocv.com/api/user/update"
+public let ApiCreateURL = "http://hello-world.innocv.com/api/user/create"
+
+//MARK: - Notifications
+public let UpdateNotification = "UpdateNotification"
