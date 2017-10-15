@@ -18,8 +18,15 @@ class DetailController: UIViewController {
             datePicker.date = user.birthdate!
             
         }
+        //Hide keyboard
+        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            textField.resignFirstResponder()
+            return false
+        }
+        
 
     }
+    
 
     @IBAction func saveUser(_ sender: Any) {
         if let user = user {
