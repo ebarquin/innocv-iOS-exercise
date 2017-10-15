@@ -2,6 +2,6 @@
 import Foundation
 
 public protocol DeleteUserInteractor {
-    func execute(id: Int, completion: @escaping (String) -> Void)
+    func execute(id: Int)
     
 }

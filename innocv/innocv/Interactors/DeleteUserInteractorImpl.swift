@@ -9,9 +9,7 @@ public class DeleteUserInteractorImpl: DeleteUserInteractor {
         self.deleteUserManager = deleteUserManager
     }
     
-    public func execute(id: Int, completion: @escaping (String) -> Void) {
-        deleteUserManager.deleteUser(id: id) { message in
-            completion(message)
-        }
+    public func execute(id: Int) {
+        deleteUserManager.deleteUser(id: id)
     }
 }
