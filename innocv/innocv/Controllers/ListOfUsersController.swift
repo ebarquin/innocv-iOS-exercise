@@ -25,15 +25,7 @@ class ListOfUsersController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewWillAppear(_ animated: Bool) {
         
-        let getAllUsersFromAPI = GetAllUsersFromAPIManagerImpl()
-        
-        GetUsersInteractorImpl(getAllUsersFromAPIManager: getAllUsersFromAPI).execute { (users) in
-            self.users = users
-            
-            
-            
-        }
-        
+        reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -96,8 +88,14 @@ class ListOfUsersController: UIViewController, UITableViewDelegate, UITableViewD
         }
     }
     @objc func reloadData() {
-        self.tableView.reloadData()
+        let getAllUsersFromAPI = GetAllUsersFromAPIManagerImpl()
+        GetUsersInteractorImpl(getAllUsersFromAPIManager: getAllUsersFromAPI).execute { (users) in
+            self.users = users
+            self.tableView.reloadData()
+            
+        }
     }
+    
 
 }
 
