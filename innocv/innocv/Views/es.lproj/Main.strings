@@ -1,0 +1,36 @@
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "0f5-O4-IbR"; */
+"0f5-O4-IbR.text" = "Name";
+
+/* Class = "UILabel"; text = "Birthdate"; ObjectID = "6g4-eY-tot"; */
+"6g4-eY-tot.text" = "Birthdate";
+
+/* Class = "UIButton"; normalTitle = "Update"; ObjectID = "81z-Ov-vJ1"; */
+"81z-Ov-vJ1.normalTitle" = "Update";
+
+/* Class = "UILabel"; text = "2345"; ObjectID = "9n0-63-5R5"; */
+"9n0-63-5R5.text" = "2345";
+
+/* Class = "UILabel"; text = "Birthdate"; ObjectID = "NRI-oX-yE7"; */
+"NRI-oX-yE7.text" = "Birthdate";
+
+/* Class = "UILabel"; text = "Id"; ObjectID = "O5t-Z3-NAt"; */
+"O5t-Z3-NAt.text" = "Id";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "PrE-sA-z8B"; */
+"PrE-sA-z8B.text" = "Name";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "SQP-Zk-MLp"; */
+"SQP-Zk-MLp.placeholder" = "Name";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "brc-sd-lga"; */
+"brc-sd-lga.title" = "Item";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "oFW-k3-ht0"; */
+"oFW-k3-ht0.placeholder" = "Name";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "tkn-Eq-yjd"; */
+"tkn-Eq-yjd.text" = "Name";
+
+/* Class = "UIButton"; normalTitle = "Create"; ObjectID = "yXY-oq-Cpi"; */
+"yXY-oq-Cpi.normalTitle" = "Create";

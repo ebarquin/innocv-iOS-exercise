@@ -17,16 +17,16 @@ class NewUserController: UIViewController {
         let name = userName.text
         let birthdate = userBirthdate.date
         if userName.text == "" {
-            let alertNoData = UIAlertController(title: "Error", message: "Enter a valid name", preferredStyle: .alert)
-            let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+            let alertNoData = UIAlertController(title: alertCreateNoDataTitle, message: alertCreateNoDataMessage, preferredStyle: .alert)
+            let cancel = UIAlertAction(title: alertOK, style: .cancel, handler: nil)
             alertNoData.addAction(cancel)
             self.present(alertNoData, animated: true, completion: nil)
         } else {
             
             
-            let alertInsert = UIAlertController(title: "Save user", message: "Do you want to create the user?", preferredStyle: .alert)
-            let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-            let ok = UIAlertAction(title: "Ok", style: .default, handler: { (ok) in
+            let alertInsert = UIAlertController(title: alertInsertTitle, message: alertInsertMessage, preferredStyle: .alert)
+            let cancel = UIAlertAction(title: alertCancel, style: .cancel, handler: nil)
+            let ok = UIAlertAction(title: alertOK, style: .default, handler: { (ok) in
                 let createUser = CreateUserManagerImpl()
                 
                 CreateUserInteractorImpl(createUserManager: createUser).execute(name: name!, birthdate: birthdate)
