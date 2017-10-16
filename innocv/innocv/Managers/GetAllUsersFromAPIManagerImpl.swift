@@ -32,7 +32,10 @@ public class GetAllUsersFromAPIManagerImpl: GetAllUsersFromAPIManager {
                 }
 
             case.failure:
-                print("Cagada")
+                print("Error downloading the user")
+               
+                
+                
             }
         }
     }

@@ -12,11 +12,11 @@ public class UpdateUserManagerImpl: UpdateUserManager {
         Alamofire.request(ApiUpdateURL, method: .post, parameters: parametersObject, encoding: JSONEncoding.default, headers: HTTP_HEADERS).responseJSON { (response) in
             switch response.result {
             case .success:
-                print("Exito")
                 NotificationCenter.default.post(name: Notification.Name(rawValue: UpdateNotification), object: self)
 
             case .failure:
-                print("cagada")
+                
+                print("Error updating user")
             }
         }
     }

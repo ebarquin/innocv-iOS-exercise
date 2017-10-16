@@ -29,17 +29,11 @@ class NewUserController: UIViewController {
             let ok = UIAlertAction(title: "Ok", style: .default, handler: { (ok) in
                 let createUser = CreateUserManagerImpl()
                 
-                CreateUserInteractorImpl(createUserManager: createUser).execute(name: name!, birthdate: birthdate, completion: { (message) in
-                    print(message)
-                    self.navigationController?.popViewController(animated: true)
+                CreateUserInteractorImpl(createUserManager: createUser).execute(name: name!, birthdate: birthdate)
+                self.navigationController?.popViewController(animated: true)
                 })
-                
-                
-                
-                
-                
-            })
             
+                
             alertInsert.addAction(ok)
             alertInsert.addAction(cancel)
             self.present(alertInsert, animated: true, completion: nil)
