@@ -3,6 +3,7 @@ import Foundation
 
 public class GetAllUsersFromAPIManagerFakeImpl {
     
+    //Fake implementation usign during development
     
     var users = [
                  User(id:1234, name:"Manuel", birthdate: Date())

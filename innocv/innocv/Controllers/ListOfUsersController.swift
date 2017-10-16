@@ -14,9 +14,7 @@ class ListOfUsersController: UIViewController, UITableViewDelegate, UITableViewD
         GetUsersInteractorImpl(getAllUsersFromAPIManager: getAllUsersFromAPI).execute { (users) in
             self.users = users
             self.tableView.reloadData()
-            
         }
-        
         
         tableView.dataSource = self
         tableView.delegate = self

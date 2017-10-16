@@ -36,7 +36,6 @@
 		9CC6C39F1F90FDCA00F795AE /* UpdateUserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6C39E1F90FDCA00F795AE /* UpdateUserInteractor.swift */; };
 		9CC6C3A11F90FDDC00F795AE /* UpdateUserInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6C3A01F90FDDC00F795AE /* UpdateUserInteractorImpl.swift */; };
 		9CC6C3A51F91037500F795AE /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6C3A41F91037500F795AE /* DetailController.swift */; };
-		9CEB24E51F94C32500FC79F7 /* JSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEB24E41F94C32500FC79F7 /* JSONTests.swift */; };
 		9CEB24E71F94C38F00FC79F7 /* GetAllUsersFromAPIManagerFakeImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEB24E61F94C38F00FC79F7 /* GetAllUsersFromAPIManagerFakeImpl.swift */; };
 		9CF198E71F920246003192EC /* CreateUserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF198E61F920246003192EC /* CreateUserInteractor.swift */; };
 		9CF198E91F920257003192EC /* CreateUserInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF198E81F920257003192EC /* CreateUserInteractorImpl.swift */; };
@@ -94,7 +93,6 @@
 		9CC6C39E1F90FDCA00F795AE /* UpdateUserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserInteractor.swift; sourceTree = "<group>"; };
 		9CC6C3A01F90FDDC00F795AE /* UpdateUserInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserInteractorImpl.swift; sourceTree = "<group>"; };
 		9CC6C3A41F91037500F795AE /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
-		9CEB24E41F94C32500FC79F7 /* JSONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONTests.swift; sourceTree = "<group>"; };
 		9CEB24E61F94C38F00FC79F7 /* GetAllUsersFromAPIManagerFakeImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllUsersFromAPIManagerFakeImpl.swift; sourceTree = "<group>"; };
 		9CF198E61F920246003192EC /* CreateUserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserInteractor.swift; sourceTree = "<group>"; };
 		9CF198E81F920257003192EC /* CreateUserInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserInteractorImpl.swift; sourceTree = "<group>"; };
@@ -185,7 +183,6 @@
 			children = (
 				9C0ADCD81F8E178400144FB9 /* innocvTests.swift */,
 				9C0ADCDA1F8E178400144FB9 /* Info.plist */,
-				9CEB24E41F94C32500FC79F7 /* JSONTests.swift */,
 			);
 			path = innocvTests;
 			sourceTree = "<group>";
@@ -511,7 +508,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C0ADCD91F8E178400144FB9 /* innocvTests.swift in Sources */,
-				9CEB24E51F94C32500FC79F7 /* JSONTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

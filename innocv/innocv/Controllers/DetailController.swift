@@ -27,7 +27,7 @@ class DetailController: UIViewController {
 
     }
     
-
+    //Mark: - User update
     @IBAction func saveUser(_ sender: Any) {
         if let user = user {
             
@@ -50,7 +50,7 @@ class DetailController: UIViewController {
         
     }
     
-
+    //MARK: - User delete
     @IBAction func deleteUser(_ sender: Any) {
         if let user = user {
         

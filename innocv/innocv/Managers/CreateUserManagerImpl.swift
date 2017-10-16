@@ -8,6 +8,8 @@ public class CreateUserManagerImpl: CreateUserManager {
         
         let birthdayString = Date.backendFormat(date: birthdate)
     
+        //MARK: - Update user using  HTTP request
+        
         let parametersObject = ["name": name, "birthdate": birthdayString]
         Alamofire.request(ApiCreateURL, method: .post, parameters: parametersObject, encoding: JSONEncoding.default, headers: HTTP_HEADERS).responseJSON { (response) in
             switch response.result {

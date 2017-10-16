@@ -5,6 +5,8 @@ import SwiftyJSON
 
 public class GetAllUsersFromAPIManagerImpl: GetAllUsersFromAPIManager {
     
+    //MARK: - Download Users from the endpoint
+    
     public func downloadAllUsers(completion: @escaping (Users) -> Void) {
         Alamofire.request(ApiURL, method: .get).validate().responseJSON { (response) in
 
@@ -23,6 +25,9 @@ public class GetAllUsersFromAPIManagerImpl: GetAllUsersFromAPIManager {
             }
         }
     }
+    
+    
+    //JSON decodification
     
     func decode (json: JSON) -> Users {
         let entries = json.arrayValue

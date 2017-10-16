@@ -8,10 +8,11 @@ class NewUserController: UIViewController {
     
     
     override func viewDidLoad() {
-        super.viewDidLoad()    
+        super.viewDidLoad()
+        userBirthdate.setValue(UIColor.white, forKey: "textColor")
         
     }
-
+    //MARK: - User Creation
     @IBAction func createUser(_ sender: Any) {
         
         let name = userName.text
